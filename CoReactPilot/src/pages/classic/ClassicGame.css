@@ -1,0 +1,105 @@
+table {
+    width: 90%;
+    margin: 20px auto; /* Add padding around the table */
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    table-layout: auto; /* Allow table to adjust column widths */
+}
+
+table img {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px; /* Reduce padding for less whitespace */
+    text-align: center;
+    white-space: nowrap; /* Prevent cells from being too wide */
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.input-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative; /* Ensure relative positioning */
+    height: 50px; /* Define a height for the parent container */
+}
+
+.input-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative; /* Ensure relative positioning */
+}
+
+.input-box {
+    padding: 10px;
+    width: 50%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.suggestions {
+    position: absolute; /* Position suggestions absolutely */
+    width: 50%; /* Match the width of the input box */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure suggestions appear above other elements */
+    max-height: 200px; /* Limit the height of the suggestions box */
+    overflow-y: auto; /* Add scroll if suggestions exceed max-height */
+}
+
+.suggestion-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f1f1f1;
+}
+
+.suggestion-item img {
+    margin-right: 10px;
+}
+
+.suggestion-item.selected {
+    background-color: #e0e0e0; /* Highlight color for selected suggestion */
+}
+
+.hints-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hint-item {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
